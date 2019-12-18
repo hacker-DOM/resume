@@ -1,0 +1,49 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p && cp build/index.html build/404.html",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --open",
+    "deploy": "npm run build && gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacker-dom/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacker-dom/resume/issues"
+  },
+  "homepage": "https://github.com/hacker-dom/resume#readme",
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@kiwicom/orbit-components": "^0.68.0",
+    "babel-loader": "^8.0.6",
+    "bluebird": "^3.7.2",
+    "copy-webpack-plugin": "^5.0.5",
+    "cross-env": "^6.0.3",
+    "error-overlay-webpack-plugin": "^0.4.1",
+    "gh-pages": "^2.1.1",
+    "history": "^4.10.1",
+    "html-webpack-plugin": "^3.2.0",
+    "ramda": "^0.26.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.0.0-rc.2",
+    "use-query-params": "^0.4.5",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-do-expressions": "^7.7.4",
+    "babel-plugin-styled-components": "^1.10.6"
+  }
+}
