@@ -1,10 +1,12 @@
 export default {
   npmPackages: [
     {name: `@babel/core`, level: 3},
+    {name: `typescript`, level: 3},
     {name: `webpack`, level: 3},
     {name: `react`, level: 3},
     {name: `ramda`, level: 3},
     {name: `mocha`, level: 3},
+    {name: `redux`, level: 3},
     {name: `graphql`, level: 3},
     {name: `styled-components`, level: 3},
     {name: `apollo-client`, level: 3},
@@ -18,5 +20,6 @@ export default {
     {name: `HTML5`, level: 2},
     {name: `CSS3`, level: 3},
     {name: `JS`, level: 3},
+    {name: `Typescript`, level: 2},
   ]
 }

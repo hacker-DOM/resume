@@ -66,7 +66,7 @@ Aside = styled.aside`
   ${'' /* font-size: 16px; */}
 
   position: absolute;
-  top: 55%;
+  top: 56%;
   left: 35%;
   ${'' /* transform: translate(-50%, -50%) rotate(-10deg); */}
   transform: rotate(-6deg);
@@ -78,6 +78,7 @@ Aside = styled.aside`
   box-shadow:
     -.5rem -.5rem 3rem #333
   ;
+  -webkit-filter:blur(0);
 
   font-size: 1.6rem;
 
